@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-box;
+}
+
+
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #0f081f;
+    /* background-image: linear-gradient(#5e13a3, rgb(0, 0, 0)); */
+    background-attachment: fixed;
+    /* Made the background not tile */
+    overflow: auto;
+    scroll-behavior;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    /* gap: 3.2em; */
+    margin-bottom: 25px;
+    padding: 10px 0 10px 0;
+    border-bottom: 2px dashed #595464;
+}
+
+header>h1 {
+    color: #7739B6;
+    display: inline-block;
+    font-family: "Acme", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    font-size: 90px;
+    text-decoration: underline;
+    margin: 2px, 2px;
+    align-content: center;
+}
+
+#pagetitle:hover {
+    /* text-shadow: #9984D4 2px 0 5px; */
+
+}
+
+h1:hover {
+    transform: scale(1.01);
+    /* USE THE CURSOR THING LMAO */
+    cursor: context-menu;
+}
+
+
+
+#title {
+    cursor: context-menu;
+    font-size: 1em;
+    font-family: "Acme", sans-serif;
+    padding: 10px 10px 10px 10px
+}
+
+
+::selection {
+    color: #58a313;
+}
+
+
+#board {
+    text-align: center;
+    color: #58a313;
+    display: flex;
+    margin: 0 auto;
+    width: 625px;
+    height: 625px;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    border-radius: 0.4em;
+    background-color: black;
+    max-width: 1000px;
+    max-length: 1000px;
+    justify-content: center;
+
+}
+
+#board div {
+    font-family: "Acme";
+    font-size: 1.2em;
+    width: 20%;
+    height: 20%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #6c29b0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    word-break: break-word;
+    padding: 0.2em;
+
+
+}
+
+#board div:hover {
+    background-color: hsl(268, 46%, 49%);
+    transform: scale(110%);
+    transition: 25ms;
+    font-weight: 500;
+    text-shadow: #82eb20;
+}
+
+#board div:active {
+    transform: scale(1);
+    /* background-color: #6a27aa;
+    color: #75d719; */
+    font-size: 1.2em;
+    transition: 25ms;
+}
+
+p {
+    color: rgb(164, 114, 230);
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 25px;
+    border-top: 2px dashed #595464;
+    padding-top: 10px;
+}
+
+
+
+/*V OLD SHIT BELOW  V*/
+
+/* img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1500px;
+    height: 400px;
+    transform: scaleX(1);
+}
+
+img:hover {
+    transform: scaleY(-1);
+} */
+
+/* table,
+th,
+td {
+    border: 3px solid;
+    padding: 50px;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: #6D29B1;
+    background-attachment: fixed;
+    font-size: 50px;
+} */
+
+/* thead {
+    font-size: normal;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    border-style: inset;
+
+} */
+
+/* tbody td:hover {
+    background: #844AC7;
+} */
